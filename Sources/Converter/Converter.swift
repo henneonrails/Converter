@@ -14,7 +14,7 @@ public actor EuroCurrencies {
   // MARK: - Properties
   
   private let isoCurrencySymbol: String
-  private let ecbURL = URL(string: "http://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml")!
+  private let ecbURL = URL(string: "https://www.ecb.europa.eu/stats/eurofxref/eurofxref-daily.xml")!
   @MainActor private let userDefaults = UserDefaults.standard
   
   @MainActor private(set) public var conversionRate: Double {
